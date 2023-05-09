@@ -3,8 +3,7 @@ kind: AnsibleJob
 metadata:
   name: demo-job-001
 spec:
-  #  tower_auth_secret: toweraccess
-  job_template_name: fail
+  job_template_name: pass
 #  extra_vars:
 #    cost: 6.88
 #    ghosts: ["inky","pinky","clyde","sue"]

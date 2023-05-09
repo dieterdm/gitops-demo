@@ -4,17 +4,17 @@ metadata:
   name: demo-job-001
 spec:
   job_template_name: pass
-#  extra_vars:
-#    cost: 6.88
-#    ghosts: ["inky","pinky","clyde","sue"]
-#    is_enable: false
-#    other_variable: foo
-#    pacman: mrs
-#    size: 8
-#    targets_list:
-#    - aaa
-#    - bbb
-#    - ccc
-#    version: 1.23.45
-#  job_tags: "provision,install,configuration"
-#  skip_tags: "configuration,restart"
+  extra_vars:
+    cost: 6.88
+    ghosts: ["inky","pinky","clyde","sue"]
+    is_enable: false
+    other_variable: foo
+    pacman: mrs
+    size: 8
+    targets_list:
+    - aaa
+    - bbb
+    - ccc
+    version: 1.23.45
+  job_tags: "provision,install,configuration"
+  skip_tags: "configuration,restart"

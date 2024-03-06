@@ -1,0 +1,8 @@
+apiVersion: s3.services.k8s.aws/v1alpha1
+kind: Bucket
+metadata:
+  name: my-amazing-bucket
+  annotations:
+    pronounced-as: boo-kay
+spec:
+  name: my-amazing-bucket

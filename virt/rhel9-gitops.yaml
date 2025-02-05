@@ -78,7 +78,7 @@ spec:
       terminationGracePeriodSeconds: 180
       volumes:
         - dataVolume:
-            name: rhel9-white-whippet-26
+            name: rhel9-gitops
           name: rootdisk
         - cloudInitNoCloud:
             userData: |

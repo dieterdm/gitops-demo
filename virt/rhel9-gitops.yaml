@@ -40,7 +40,7 @@ spec:
               noCloud: {}
             source:
               secret:
-                secretName: dieter-mac
+                secretName: dieter-mac-key
       architecture: amd64
       domain:
         cpu:

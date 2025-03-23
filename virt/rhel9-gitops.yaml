@@ -5,7 +5,6 @@ metadata:
     app: rhel9-gitops
     kubevirt.io/dynamic-credentials-support: 'true'
   name: rhel9-gitops
-  namespace: dieter
 spec:
   dataVolumeTemplates:
     - apiVersion: cdi.kubevirt.io/v1beta1

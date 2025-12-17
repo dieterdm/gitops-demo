@@ -1,13 +1,12 @@
 apiVersion: kubevirt.io/v1
 kind: VirtualMachine
 metadata:
-  annotations:
-  name: rhel9-peach-constrictor-55
+  name: rhel9-blush-tern-69
   namespace: metrodrvm
   finalizers:
     - kubevirt.io/virtualMachineControllerFinalize
   labels:
-    app: rhel9-peach-constrictor-55
+    app: rhel9-blush-tern-69
     kubevirt.io/dynamic-credentials-support: 'true'
     vm.kubevirt.io/template: rhel9-server-small
     vm.kubevirt.io/template.namespace: openshift
@@ -19,7 +18,7 @@ spec:
       kind: DataVolume
       metadata:
         creationTimestamp: null
-        name: rhel9-peach-constrictor-55
+        name: rhel9-blush-tern-69
       spec:
         sourceRef:
           kind: DataSource
@@ -38,7 +37,7 @@ spec:
         vm.kubevirt.io/workload: server
       creationTimestamp: null
       labels:
-        kubevirt.io/domain: rhel9-peach-constrictor-55
+        kubevirt.io/domain: rhel9-blush-tern-69
         kubevirt.io/size: small
         network.kubevirt.io/headlessService: headless
     spec:
@@ -57,7 +56,7 @@ spec:
                 bus: virtio
               name: cloudinitdisk
           interfaces:
-            - macAddress: '02:40:bd:00:00:01'
+            - macAddress: '02:40:bd:00:00:02'
               masquerade: {}
               model: virtio
               name: default
@@ -69,7 +68,7 @@ spec:
         firmware:
           bootloader:
             efi: {}
-          serial: 754279da-7478-4556-ace6-bff9f0b4e440
+          serial: a6e054d2-ecbb-4f39-9994-ae08eb1b9f8f
         machine:
           type: pc-q35-rhel9.6.0
         memory:
@@ -81,7 +80,7 @@ spec:
       terminationGracePeriodSeconds: 180
       volumes:
         - dataVolume:
-            name: rhel9-peach-constrictor-55
+            name: rhel9-blush-tern-69
           name: rootdisk
         - cloudInitNoCloud:
             userData: |

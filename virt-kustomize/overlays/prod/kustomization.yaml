@@ -15,4 +15,4 @@ patches:
     patch: |-
       - op: replace
         path: /spec/template/spec/domain/cpu/sockets
-        value: 6
+        value: 8

@@ -15,4 +15,4 @@ patches:
     patch: |-
       - op: replace
         path: /spec/instancetype
-        value: u1.large
+        value: "u1.large"

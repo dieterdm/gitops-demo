@@ -11,8 +11,8 @@ patches:
       kind: VirtualMachine
       version: v1
       group: kubevirt.io
-      name: rhel9-gitops
+      name: rhel10-gitops
     patch: |-
       - op: replace
-        path: /spec/template/spec/domain/cpu/sockets
-        value: 4
+        path: /spec/instancetype
+        value: u1.large

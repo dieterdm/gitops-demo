@@ -64,4 +64,5 @@ spec:
               chpasswd:
                 expire: false
               user: rhel
+              password: rhel
           name: cloudinitdisk
